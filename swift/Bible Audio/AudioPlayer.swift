@@ -8,13 +8,14 @@
 import Foundation
 import AVFoundation
 
-class AudioPlayer: ObservableObject {
+class AudioPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
     private var player: AVAudioPlayer?
     private var currentTrackIndex = 0
     private var trackURLs: [URL] = []
     @Published var isPlaying = false
 
-    init() {
+    override init() {
+        super.init()
         loadTrackURLs()
         prepareToPlay()
     }
@@ -67,7 +68,6 @@ class AudioPlayer: ObservableObject {
     }
 }
 
-extension AudioPlayer: AVAudioPlayerDelegate {
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         currentTrackIndex += 1
         if currentTrackIndex >= trackURLs.count {
@@ -75,4 +75,3 @@ extension AudioPlayer: AVAudioPlayerDelegate {
         }
         prepareToPlay()
     }
-}
