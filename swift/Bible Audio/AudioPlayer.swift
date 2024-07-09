@@ -66,7 +66,6 @@ class AudioPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
             isPlaying = true
         }
     }
-}
 
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         currentTrackIndex += 1
@@ -75,3 +74,4 @@ class AudioPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
         }
         prepareToPlay()
     }
+}
