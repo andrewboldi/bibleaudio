@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32B415522C3CFB46006E743D /* Bible_AudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B415512C3CFB46006E743D /* Bible_AudioApp.swift */; };
+		32B415542C3CFB46006E743D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B415532C3CFB46006E743D /* ContentView.swift */; };
+		32B415562C3CFB47006E743D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B415552C3CFB47006E743D /* Assets.xcassets */; };
+		32B415592C3CFB47006E743D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B415582C3CFB47006E743D /* Preview Assets.xcassets */; };
+		32B415632C3CFB47006E743D /* Bible_AudioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B415622C3CFB47006E743D /* Bible_AudioTests.swift */; };
+		32B4156D2C3CFB47006E743D /* Bible_AudioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B4156C2C3CFB47006E743D /* Bible_AudioUITests.swift */; };
+		32B4156F2C3CFB47006E743D /* Bible_AudioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B4156E2C3CFB47006E743D /* Bible_AudioUITestsLaunchTests.swift */; };
+		32B4157C2C3CFB8D006E743D /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B4157B2C3CFB8D006E743D /* AudioPlayer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32B4155F2C3CFB47006E743D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32B415462C3CFB46006E743D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32B4154D2C3CFB46006E743D;
+			remoteInfo = "Bible Audio";
+		};
+		32B415692C3CFB47006E743D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32B415462C3CFB46006E743D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32B4154D2C3CFB46006E743D;
+			remoteInfo = "Bible Audio";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32B4154E2C3CFB46006E743D /* Bible Audio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bible Audio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32B415512C3CFB46006E743D /* Bible_AudioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bible_AudioApp.swift; sourceTree = "<group>"; };
+		32B415532C3CFB46006E743D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		32B415552C3CFB47006E743D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32B415582C3CFB47006E743D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		32B4155E2C3CFB47006E743D /* Bible AudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bible AudioTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32B415622C3CFB47006E743D /* Bible_AudioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bible_AudioTests.swift; sourceTree = "<group>"; };
+		32B415682C3CFB47006E743D /* Bible AudioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bible AudioUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32B4156C2C3CFB47006E743D /* Bible_AudioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bible_AudioUITests.swift; sourceTree = "<group>"; };
+		32B4156E2C3CFB47006E743D /* Bible_AudioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bible_AudioUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		32B4157B2C3CFB8D006E743D /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32B4154B2C3CFB46006E743D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32B4155B2C3CFB47006E743D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32B415652C3CFB47006E743D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32B415452C3CFB46006E743D = {
+			isa = PBXGroup;
+			children = (
+				32B415502C3CFB46006E743D /* Bible Audio */,
+				32B415612C3CFB47006E743D /* Bible AudioTests */,
+				32B4156B2C3CFB47006E743D /* Bible AudioUITests */,
+				32B4154F2C3CFB46006E743D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32B4154F2C3CFB46006E743D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32B4154E2C3CFB46006E743D /* Bible Audio.app */,
+				32B4155E2C3CFB47006E743D /* Bible AudioTests.xctest */,
+				32B415682C3CFB47006E743D /* Bible AudioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32B415502C3CFB46006E743D /* Bible Audio */ = {
+			isa = PBXGroup;
+			children = (
+				32B4157B2C3CFB8D006E743D /* AudioPlayer.swift */,
+				32B415512C3CFB46006E743D /* Bible_AudioApp.swift */,
+				32B415532C3CFB46006E743D /* ContentView.swift */,
+				32B415552C3CFB47006E743D /* Assets.xcassets */,
+				32B415572C3CFB47006E743D /* Preview Content */,
+			);
+			path = "Bible Audio";
+			sourceTree = "<group>";
+		};
+		32B415572C3CFB47006E743D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				32B415582C3CFB47006E743D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		32B415612C3CFB47006E743D /* Bible AudioTests */ = {
+			isa = PBXGroup;
+			children = (
+				32B415622C3CFB47006E743D /* Bible_AudioTests.swift */,
+			);
+			path = "Bible AudioTests";
+			sourceTree = "<group>";
+		};
+		32B4156B2C3CFB47006E743D /* Bible AudioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				32B4156C2C3CFB47006E743D /* Bible_AudioUITests.swift */,
+				32B4156E2C3CFB47006E743D /* Bible_AudioUITestsLaunchTests.swift */,
+			);
+			path = "Bible AudioUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32B4154D2C3CFB46006E743D /* Bible Audio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32B415722C3CFB47006E743D /* Build configuration list for PBXNativeTarget "Bible Audio" */;
+			buildPhases = (
+				32B4154A2C3CFB46006E743D /* Sources */,
+				32B4154B2C3CFB46006E743D /* Frameworks */,
+				32B4154C2C3CFB46006E743D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bible Audio";
+			productName = "Bible Audio";
+			productReference = 32B4154E2C3CFB46006E743D /* Bible Audio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32B4155D2C3CFB47006E743D /* Bible AudioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32B415752C3CFB47006E743D /* Build configuration list for PBXNativeTarget "Bible AudioTests" */;
+			buildPhases = (
+				32B4155A2C3CFB47006E743D /* Sources */,
+				32B4155B2C3CFB47006E743D /* Frameworks */,
+				32B4155C2C3CFB47006E743D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32B415602C3CFB47006E743D /* PBXTargetDependency */,
+			);
+			name = "Bible AudioTests";
+			productName = "Bible AudioTests";
+			productReference = 32B4155E2C3CFB47006E743D /* Bible AudioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		32B415672C3CFB47006E743D /* Bible AudioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32B415782C3CFB47006E743D /* Build configuration list for PBXNativeTarget "Bible AudioUITests" */;
+			buildPhases = (
+				32B415642C3CFB47006E743D /* Sources */,
+				32B415652C3CFB47006E743D /* Frameworks */,
+				32B415662C3CFB47006E743D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32B4156A2C3CFB47006E743D /* PBXTargetDependency */,
+			);
+			name = "Bible AudioUITests";
+			productName = "Bible AudioUITests";
+			productReference = 32B415682C3CFB47006E743D /* Bible AudioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32B415462C3CFB46006E743D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					32B4154D2C3CFB46006E743D = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					32B4155D2C3CFB47006E743D = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 32B4154D2C3CFB46006E743D;
+					};
+					32B415672C3CFB47006E743D = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 32B4154D2C3CFB46006E743D;
+					};
+				};
+			};
+			buildConfigurationList = 32B415492C3CFB46006E743D /* Build configuration list for PBXProject "Bible Audio" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32B415452C3CFB46006E743D;
+			productRefGroup = 32B4154F2C3CFB46006E743D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32B4154D2C3CFB46006E743D /* Bible Audio */,
+				32B4155D2C3CFB47006E743D /* Bible AudioTests */,
+				32B415672C3CFB47006E743D /* Bible AudioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32B4154C2C3CFB46006E743D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32B415592C3CFB47006E743D /* Preview Assets.xcassets in Resources */,
+				32B415562C3CFB47006E743D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32B4155C2C3CFB47006E743D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32B415662C3CFB47006E743D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32B4154A2C3CFB46006E743D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32B415542C3CFB46006E743D /* ContentView.swift in Sources */,
+				32B415522C3CFB46006E743D /* Bible_AudioApp.swift in Sources */,
+				32B4157C2C3CFB8D006E743D /* AudioPlayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32B4155A2C3CFB47006E743D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32B415632C3CFB47006E743D /* Bible_AudioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32B415642C3CFB47006E743D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32B4156F2C3CFB47006E743D /* Bible_AudioUITestsLaunchTests.swift in Sources */,
+				32B4156D2C3CFB47006E743D /* Bible_AudioUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32B415602C3CFB47006E743D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32B4154D2C3CFB46006E743D /* Bible Audio */;
+			targetProxy = 32B4155F2C3CFB47006E743D /* PBXContainerItemProxy */;
+		};
+		32B4156A2C3CFB47006E743D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32B4154D2C3CFB46006E743D /* Bible Audio */;
+			targetProxy = 32B415692C3CFB47006E743D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		32B415702C3CFB47006E743D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		32B415712C3CFB47006E743D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32B415732C3CFB47006E743D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Bible Audio/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Andrew-Boldi.Bible-Audio";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32B415742C3CFB47006E743D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Bible Audio/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Andrew-Boldi.Bible-Audio";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		32B415762C3CFB47006E743D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Andrew-Boldi.Bible-AudioTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bible Audio.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bible Audio";
+			};
+			name = Debug;
+		};
+		32B415772C3CFB47006E743D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Andrew-Boldi.Bible-AudioTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bible Audio.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bible Audio";
+			};
+			name = Release;
+		};
+		32B415792C3CFB47006E743D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Andrew-Boldi.Bible-AudioUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Bible Audio";
+			};
+			name = Debug;
+		};
+		32B4157A2C3CFB47006E743D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Andrew-Boldi.Bible-AudioUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Bible Audio";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32B415492C3CFB46006E743D /* Build configuration list for PBXProject "Bible Audio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32B415702C3CFB47006E743D /* Debug */,
+				32B415712C3CFB47006E743D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32B415722C3CFB47006E743D /* Build configuration list for PBXNativeTarget "Bible Audio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32B415732C3CFB47006E743D /* Debug */,
+				32B415742C3CFB47006E743D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32B415752C3CFB47006E743D /* Build configuration list for PBXNativeTarget "Bible AudioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32B415762C3CFB47006E743D /* Debug */,
+				32B415772C3CFB47006E743D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32B415782C3CFB47006E743D /* Build configuration list for PBXNativeTarget "Bible AudioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32B415792C3CFB47006E743D /* Debug */,
+				32B4157A2C3CFB47006E743D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32B415462C3CFB46006E743D /* Project object */;
+}
