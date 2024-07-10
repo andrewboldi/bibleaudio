@@ -58,7 +58,7 @@ class AudioPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
     }
 
     func togglePlayPause() {
-        if player?.isPlaying == true {
+        if isPlaying == true {
             player?.pause()
             isPlaying = false
         } else {
