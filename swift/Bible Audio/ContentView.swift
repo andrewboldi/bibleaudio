@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var audioPlayer = AudioPlayer()
+
+    var colors: [Color] = [.blue, .cyan, .gray, .green, .indigo, .mint, .orange, .pink, .purple, .red]
+
  
     var body: some View {
         VStack {
@@ -18,7 +21,7 @@ struct ContentView: View {
                 Image(systemName: audioPlayer.isPlaying ? "pause.circle.fill" : "play.circle.fill")
                     .resizable()
                     .frame(width: 200, height: 200)
-                    .foregroundColor(.blue)
+                    .foregroundColor(colors.randomElement() ?? .blue)
             }
         }
     }

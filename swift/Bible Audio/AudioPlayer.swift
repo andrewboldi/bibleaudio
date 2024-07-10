@@ -10,9 +10,18 @@ import AVFoundation
 
 class AudioPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
     private var player: AVAudioPlayer?
-    private var currentTrackIndex = 0
     private var trackURLs: [URL] = []
     @Published var isPlaying = false
+
+    // persist currentTrackIndex after relaunch via UserDefaults
+    private var currentTrackIndex: Int {
+        get {
+            UserDefaults.standard.integer(forKey: "currentTrackIndex")
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "currentTrackIndex")
+        }
+    }
 
     override init() {
         super.init()
