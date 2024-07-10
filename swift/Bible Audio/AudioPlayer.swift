@@ -12,6 +12,8 @@ class AudioPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
     private var player: AVAudioPlayer?
     private var trackURLs: [URL] = []
     @Published var isPlaying = false
+    @AppStorage("selectedLanguage") private var selectedLanguage: String?
+
 
     // persist currentTrackIndex after relaunch via UserDefaults
     private var currentTrackIndex: Int {
@@ -42,8 +44,17 @@ class AudioPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
     func loadTrackURLs() {
         // Load your track URLs here. For simplicity, we'll use some dummy URLs.
         // In a real app, you'd fetch these from your server or local storage.
+        var version = switch selectedLanguage {
+            case "English":
+                "ESV"
+            case "Armenian":
+                "WA2017"
+            default:
+                "ESV"
+        }
+
         for i in 0...259 { // 260 chapters in the NT 
-            if let url = URL(string: "https://github.com/Polydynamical/bibleaudio/raw/main/audio/mp3/WA2017/chapters/\(String(format: "%03d", arguments: [i])).mp3") {
+            if let url = URL(string: "https://github.com/Polydynamical/bibleaudio/raw/main/audio/mp3/\(version)/chapters/\(String(format: "%03d", arguments: [i])).mp3") {
                 trackURLs.append(url)
             }
         }
