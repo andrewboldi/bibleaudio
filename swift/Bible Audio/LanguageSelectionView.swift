@@ -40,8 +40,6 @@ struct LanguageSelectionView: View {
     }
 }
 
-struct LanguageSelectionView_Previews: PreviewProvider {
-    static var previews: some View {
-        LanguageSelectionView()
-    }
+#Preview {
+    LanguageSelectionView()
 }
