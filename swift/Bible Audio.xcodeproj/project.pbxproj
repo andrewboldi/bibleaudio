@@ -46,6 +46,7 @@
 		32B4156C2C3CFB47006E743D /* Bible_AudioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bible_AudioUITests.swift; sourceTree = "<group>"; };
 		32B4156E2C3CFB47006E743D /* Bible_AudioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bible_AudioUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		32B4157B2C3CFB8D006E743D /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		32BA6C992C3F36A700529AB6 /* Bible-Audio-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bible-Audio-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +97,7 @@
 		32B415502C3CFB46006E743D /* Bible Audio */ = {
 			isa = PBXGroup;
 			children = (
+				32BA6C992C3F36A700529AB6 /* Bible-Audio-Info.plist */,
 				32B4157B2C3CFB8D006E743D /* AudioPlayer.swift */,
 				32B415512C3CFB46006E743D /* Bible_AudioApp.swift */,
 				32B415532C3CFB46006E743D /* ContentView.swift */,
@@ -429,6 +431,7 @@
 				DEVELOPMENT_TEAM = 823Z7R2J2V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bible-Audio-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -458,6 +461,7 @@
 				DEVELOPMENT_TEAM = 823Z7R2J2V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bible-Audio-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
