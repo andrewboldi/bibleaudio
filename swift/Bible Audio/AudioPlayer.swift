@@ -16,8 +16,18 @@ class AudioPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
 
     override init() {
         super.init()
+        configureAudioSession()
         loadTrackURLs()
         prepareToPlay()
+    }
+
+    private func configureAudioSession() {
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+            print("Failed to set up AVAudioSession: \(error)")
+        }
     }
 
     func loadTrackURLs() {
