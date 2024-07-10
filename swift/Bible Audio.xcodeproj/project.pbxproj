@@ -15,6 +15,7 @@
 		32B4156D2C3CFB47006E743D /* Bible_AudioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B4156C2C3CFB47006E743D /* Bible_AudioUITests.swift */; };
 		32B4156F2C3CFB47006E743D /* Bible_AudioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B4156E2C3CFB47006E743D /* Bible_AudioUITestsLaunchTests.swift */; };
 		32B4157C2C3CFB8D006E743D /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B4157B2C3CFB8D006E743D /* AudioPlayer.swift */; };
+		32D197A62C3F45CF003D3DE6 /* LanguageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D197A52C3F45CF003D3DE6 /* LanguageSelectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		32B4156E2C3CFB47006E743D /* Bible_AudioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bible_AudioUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		32B4157B2C3CFB8D006E743D /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		32BA6C992C3F36A700529AB6 /* Bible-Audio-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bible-Audio-Info.plist"; sourceTree = SOURCE_ROOT; };
+		32D197A52C3F45CF003D3DE6 /* LanguageSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				32B415532C3CFB46006E743D /* ContentView.swift */,
 				32B415552C3CFB47006E743D /* Assets.xcassets */,
 				32B415572C3CFB47006E743D /* Preview Content */,
+				32D197A52C3F45CF003D3DE6 /* LanguageSelectionView.swift */,
 			);
 			path = "Bible Audio";
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				32B415542C3CFB46006E743D /* ContentView.swift in Sources */,
 				32B415522C3CFB46006E743D /* Bible_AudioApp.swift in Sources */,
 				32B4157C2C3CFB8D006E743D /* AudioPlayer.swift in Sources */,
+				32D197A62C3F45CF003D3DE6 /* LanguageSelectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

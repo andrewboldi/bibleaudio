@@ -9,7 +9,6 @@ import SwiftUI
 
 @main
 struct Bible_AudioApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @AppStorage("selectedLanguage") var selectedLanguage: String?
 
     var body: some Scene {
