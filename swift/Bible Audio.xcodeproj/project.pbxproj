@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		32B415522C3CFB46006E743D /* Bible_AudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B415512C3CFB46006E743D /* Bible_AudioApp.swift */; };
-		32B415542C3CFB46006E743D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B415532C3CFB46006E743D /* ContentView.swift */; };
+		32B415542C3CFB46006E743D /* AudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B415532C3CFB46006E743D /* AudioView.swift */; };
 		32B415562C3CFB47006E743D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B415552C3CFB47006E743D /* Assets.xcassets */; };
 		32B415592C3CFB47006E743D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B415582C3CFB47006E743D /* Preview Assets.xcassets */; };
 		32B415632C3CFB47006E743D /* Bible_AudioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B415622C3CFB47006E743D /* Bible_AudioTests.swift */; };
@@ -16,6 +16,7 @@
 		32B4156F2C3CFB47006E743D /* Bible_AudioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B4156E2C3CFB47006E743D /* Bible_AudioUITestsLaunchTests.swift */; };
 		32B4157C2C3CFB8D006E743D /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B4157B2C3CFB8D006E743D /* AudioPlayer.swift */; };
 		32D197A62C3F45CF003D3DE6 /* LanguageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D197A52C3F45CF003D3DE6 /* LanguageSelectionView.swift */; };
+		32D197AC2C3F6BB2003D3DE6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D197AB2C3F6BB2003D3DE6 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,7 @@
 /* Begin PBXFileReference section */
 		32B4154E2C3CFB46006E743D /* Bible Audio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bible Audio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B415512C3CFB46006E743D /* Bible_AudioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bible_AudioApp.swift; sourceTree = "<group>"; };
-		32B415532C3CFB46006E743D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		32B415532C3CFB46006E743D /* AudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioView.swift; sourceTree = "<group>"; };
 		32B415552C3CFB47006E743D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32B415582C3CFB47006E743D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		32B4155E2C3CFB47006E743D /* Bible AudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bible AudioTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +50,7 @@
 		32B4157B2C3CFB8D006E743D /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		32BA6C992C3F36A700529AB6 /* Bible-Audio-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bible-Audio-Info.plist"; sourceTree = SOURCE_ROOT; };
 		32D197A52C3F45CF003D3DE6 /* LanguageSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectionView.swift; sourceTree = "<group>"; };
+		32D197AB2C3F6BB2003D3DE6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				32BA6C992C3F36A700529AB6 /* Bible-Audio-Info.plist */,
-				32B4157B2C3CFB8D006E743D /* AudioPlayer.swift */,
 				32B415512C3CFB46006E743D /* Bible_AudioApp.swift */,
-				32B415532C3CFB46006E743D /* ContentView.swift */,
+				32D197AB2C3F6BB2003D3DE6 /* MainView.swift */,
+				32D197A52C3F45CF003D3DE6 /* LanguageSelectionView.swift */,
+				32B415532C3CFB46006E743D /* AudioView.swift */,
+				32B4157B2C3CFB8D006E743D /* AudioPlayer.swift */,
 				32B415552C3CFB47006E743D /* Assets.xcassets */,
 				32B415572C3CFB47006E743D /* Preview Content */,
-				32D197A52C3F45CF003D3DE6 /* LanguageSelectionView.swift */,
 			);
 			path = "Bible Audio";
 			sourceTree = "<group>";
@@ -265,9 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32B415542C3CFB46006E743D /* ContentView.swift in Sources */,
+				32B415542C3CFB46006E743D /* AudioView.swift in Sources */,
 				32B415522C3CFB46006E743D /* Bible_AudioApp.swift in Sources */,
 				32B4157C2C3CFB8D006E743D /* AudioPlayer.swift in Sources */,
+				32D197AC2C3F6BB2003D3DE6 /* MainView.swift in Sources */,
 				32D197A62C3F45CF003D3DE6 /* LanguageSelectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

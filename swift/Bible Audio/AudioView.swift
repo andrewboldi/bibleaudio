@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct AudioView: View {
     @StateObject var audioPlayer = AudioPlayer()
+    @AppStorage("isWelcomeScreenOver") var isWelcomeScreenOver = false
 
     var colors: [Color] = [.blue, .cyan, .gray, .green, .indigo, .mint, .orange, .pink, .purple, .red]
 
@@ -28,5 +29,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    AudioView()
 }

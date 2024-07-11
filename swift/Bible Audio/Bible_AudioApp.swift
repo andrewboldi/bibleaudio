@@ -9,15 +9,9 @@ import SwiftUI
 
 @main
 struct Bible_AudioApp: App {
-    @AppStorage("selectedLanguage") var selectedLanguage: String?
-
     var body: some Scene {
         WindowGroup {
-            if selectedLanguage == nil {
-                LanguageSelectionView()
-            } else {
-                ContentView()
-            }
+            MainView()
         }
     }
 }

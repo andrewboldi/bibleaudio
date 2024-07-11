@@ -8,32 +8,39 @@
 import SwiftUI
 
 struct LanguageSelectionView: View {
+    @AppStorage("isWelcomeScreenOver") var isWelcomeScreenOver = false
+    @State var isPressed: Bool = false
     @AppStorage("selectedLanguage") var selectedLanguage: String?
+    
     let languages = ["English", "Armenian"]
     
     var body: some View {
-        VStack {
-            Text("Select your language")
-                .font(.largeTitle)
-                .padding()
-            
-            Picker(selection: $selectedLanguage, label: Text("Language")) {
-                ForEach(languages, id: \.self) { language in
-                    Text(language).tag(language)
+        NavigationStack {
+            VStack {
+                Text("Select your language")
+                    .font(.largeTitle)
+                    .padding()
+                
+                Picker(selection: $selectedLanguage, label: Text("Language")) {
+                    ForEach(languages, id: \.self) { language in
+                        Text(language).tag(language)
+                    }
                 }
-            }
-            .pickerStyle(WheelPickerStyle())
-            .padding()
-            
-            if selectedLanguage != nil {
+                .pickerStyle(WheelPickerStyle())
+                .padding()
+                
                 Button(action: {
-                    // Action to dismiss this view and proceed
-                }) {
+                    isPressed = true
+                    isWelcomeScreenOver = true
+                }, label: {
                     Text("Confirm")
                         .padding()
                         .background(Color.blue)
                         .foregroundColor(.white)
                         .cornerRadius(8)
+                })
+                .navigationDestination(isPresented: $isPressed) {
+                    AudioView()
                 }
             }
         }
