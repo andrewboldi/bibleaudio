@@ -13,8 +13,6 @@ class AudioPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
     private var player: AVAudioPlayer?
     private var trackURLs: [URL] = []
     @Published var isPlaying = false
-    @AppStorage("selectedLanguage") private var selectedLanguage: String?
-
 
     // persist currentTrackIndex after relaunch via UserDefaults
     private var currentTrackIndex: Int {
@@ -45,7 +43,7 @@ class AudioPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
     func loadTrackURLs() {
         // Load your track URLs here. For simplicity, we'll use some dummy URLs.
         // In a real app, you'd fetch these from your server or local storage.
-        var version = switch selectedLanguage {
+        let version = switch UserDefaults.standard.string(forKey: "selectedLanguage") {
             case "English":
                 "ESV"
             case "Armenian":

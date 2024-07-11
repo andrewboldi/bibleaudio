@@ -11,7 +11,7 @@ struct AudioView: View {
     @StateObject var audioPlayer = AudioPlayer()
     @AppStorage("isWelcomeScreenOver") var isWelcomeScreenOver = false
 
-    var colors: [Color] = [.blue, .cyan, .gray, .green, .indigo, .mint, .orange, .pink, .purple, .red]
+    var colors: [Color] = [.blue, .gray, .green, .orange, .pink, .purple, .red]
 
  
     var body: some View {
@@ -21,7 +21,7 @@ struct AudioView: View {
             }) {
                 Image(systemName: audioPlayer.isPlaying ? "pause.circle.fill" : "play.circle.fill")
                     .resizable()
-                    .frame(width: 200, height: 200)
+                    .frame(width: 300, height: 300)
                     .foregroundColor(colors.randomElement() ?? .blue)
             }
         }

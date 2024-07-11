@@ -9,13 +9,14 @@ import SwiftUI
 
 struct LanguageSelectionView: View {
     @AppStorage("isWelcomeScreenOver") var isWelcomeScreenOver = false
+    @AppStorage("selectedLanguage") var selectedLanguageStore = "English"
     @State var isPressed: Bool = false
-    @AppStorage("selectedLanguage") var selectedLanguage: String?
+    @State var selectedLanguage: String = "English"
     
     let languages = ["English", "Armenian"]
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             VStack {
                 Text("Select your language")
                     .font(.largeTitle)
@@ -32,6 +33,7 @@ struct LanguageSelectionView: View {
                 Button(action: {
                     isPressed = true
                     isWelcomeScreenOver = true
+                    selectedLanguageStore = selectedLanguage
                 }, label: {
                     Text("Confirm")
                         .padding()
@@ -39,8 +41,8 @@ struct LanguageSelectionView: View {
                         .foregroundColor(.white)
                         .cornerRadius(8)
                 })
-                .navigationDestination(isPresented: $isPressed) {
-                    AudioView()
+                NavigationLink(destination: AudioView().navigationBarHidden(true), isActive: $isPressed) {
+                    EmptyView()
                 }
             }
         }

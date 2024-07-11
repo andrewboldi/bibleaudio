@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Bible Audio.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>buildNumber</key>
+			<string>1</string>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>D7BFD277857CD1461FFC2B9A5C497245E529FE58</string>
+				<key>dateExpires</key>
+				<string>7/10/25</string>
+				<key>type</key>
+				<string>Cloud Managed Apple Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>823Z7R2J2V.com.Andrew-Boldi.Bible-Audio</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>823Z7R2J2V</string>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>Bible Audio.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>3935efda-1df3-4eca-873c-99b049264c3c</string>
+				<key>dateExpires</key>
+				<string>7/10/25</string>
+				<key>name</key>
+				<string>iOS Team Ad Hoc Provisioning Profile: com.Andrew-Boldi.Bible-Audio</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>823Z7R2J2V</string>
+				<key>name</key>
+				<string>Andrew Boldi</string>
+			</dict>
+			<key>versionNumber</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+</dict>
+</plist>
